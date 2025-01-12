@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+}
+
+html body {
+    height: 100%;
+    background-color: #000;
+    width: 100%;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+header {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 4vw 3vw;
+}
+
+menu {
+    font-size: 1vw;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+i {
+    cursor: pointer;
+}
+
+.part1 {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.part1 h5 {
+    font-size: 1vw;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.line {
+    border-radius: 10px;
+    width: 10%;
+    height: 3px;
+    background-color: red
+}
+
+.part1 img {
+    width: 20%;
+}
+
+/* contant styling */
+.contant {
+    height: 83vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    /* background-color: gold; */
+}
+
+.left {
+    width: 39%;
+    height: 100%;
+    /* background-color: gray; */
+    padding: 7vw 4vw;
+}
+
+.left h1 {
+    font-size: 4vw;
+    text-transform: capitalize;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+
+.left h1 span {
+    color: #E51D2D;
+    font-weight: 600;
+}
+
+.left p {
+    font-size: 1vw;
+    width: 85%;
+}
+
+.left button {
+    background-color: red;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    border-top-left-radius: 0;
+    font-size: 1vw;
+    text-transform: capitalize;
+    margin-top: 45px;
+    cursor: pointer;
+}
+
+.right {
+    width: 39%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.center {
+    width: 22%;
+    height: 100%;
+}
+
+.center-bg {
+    margin-top: 120px;
+    width: 100%;
+    height: 75%;
+    background: url(https://i.pinimg.com/736x/a0/78/e4/a078e4ee8a9f7601ebbdb6f3e098f63f.jpg);
+    background-repeat: no-repeat;
+    background-size: 300%;
+    background-position: 60% 60%;
+    border-top-left-radius: 1000px;
+    border-top-right-radius: 1000px;
+    filter: blur(3px);
+}
+
+.contant>img {
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    height: 120%;
+    transform: translate(-50%, -50%);
+}
+
+.right-contant {
+    width: 50%;
+    text-transform: capitalize;
+    margin-bottom: 8vw;
+
+}
+
+.elem1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    opacity: 0.5;
+    border-bottom: 1px solid white;
+    margin-bottom: 10px;
+}
+
+.elem1 i {
+    cursor: pointer;
+}
+
+.elem1 h1 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.elem2 p {
+    margin-top: 10px;
+    font-size: 10px;
+    width: 70%;
+    opacity: 0.6;
+}
+
+/* contant styling ens */
+
+/* responsive 600px  */
+@media only screen and (max-width: 600px) {
+    .contant {
+        flex-direction: column;
+    }
+
+    header h5 {
+        display: none;
+    }
+
+    header .line {
+        width: 6vh;
+    }
+
+    header .part1 img {
+        width: 13vh;
+    }
+
+    header menu {
+        font-size: 2vh;
+    }
+
+    .left {
+        width: 100vw;
+        margin: auto;
+        height: 30vh;
+    }
+
+    .left h1 {
+        font-size: 3.5vh;
+        margin-bottom: 20px;
+        width: 90%;
+
+    }
+
+    .left p {
+        font-size: 1.2vh;
+        margin-bottom: 10px;
+        width: 90%;
+    }
+
+    .left button {
+        font-size: 1.2vh;
+        margin-top: 10px;
+        margin-left: 15vw;
+    }
+
+    .left .txt {
+        margin: auto;
+        width: 80%;
+    }
+
+    .center {
+        width: 100vw;
+        height: 80vh;
+        position: relative;
+        margin-top: 30px;
+    }
+
+    .center-bg {
+        width: 50%;
+        margin-left: 90px;
+        margin-top: 0px;
+        height: 100%;
+        position: absolute;
+    }
+
+    .contant>img {
+        height: 50%;
+        top: 57%;
+    }
+
+    .right {
+        width: 100vw;
+    }
+
+    .right-contant {
+        font-size: 1vh;
+    }
+
+    .elem1 {
+        height: 20px;
+        margin-bottom: 0px;
+    }
+
+    .elem2 p {
+        font-size: 0.7vh;
+
+    }
+
+    .elem1 h1 {
+        font-size: 1vh;
+    }
+}
+
+/* responsive 968 */
+@media only screen and (max-width: 968px) {
+    .center-bg{
+        width: 100%;
+    }
+    header h5{
+        display: none;
+    }
+    .center{
+        width: 40vw;
+        height: 100%;
+    }
+    header menu{
+        font-size: 2vh;
+    }
+    header i{
+        font-size: 2vh;
+    }
+    .part1 img{
+        width: 12vh;
+    }
+    .part1 .line{
+        width: 10vh;
+    }
+    .elem2 p{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .center-bg{
+        width: 100%;
+    }
+    header h5{
+        display: none;
+    }
+    header menu{
+        font-size: 2vh;
+    }
+    .part1 img{
+        width: 13vh;
+    }
+    .part1 .line{
+        width: 10vh;
+    }
+    header i{
+        font-size: 2vh;
+    }
+    .center{
+        width: 40vw;
+        height: 100%;
+    }
+    .elem2 p{
+        width: 100%;
+    }
+}
